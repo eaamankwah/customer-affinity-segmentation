@@ -548,7 +548,7 @@ The `data/` directory is gitignored and must be obtained directly from Udacity's
 
 ---
 
-A full write-up of the methodology, results framing, business value, and limitations is available in [Customer Affinity Segmentation Report](./ Customer_affinity_segmentation_report.pdf).
+A full write-up of the methodology, results framing, business value, and limitations is available in [Customer Affinity Segmentation Report](./Customer_affinity_segmentation_report.pdf).
 
 
 ## Getting Started
