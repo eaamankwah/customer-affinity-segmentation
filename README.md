@@ -1,4 +1,4 @@
-# customer-affinity-segmentation
+# Customer Affinity Segmentation
 
 ## Unsupervised Machine Learning · Bertelsmann Arvato Analytics · Udacity ML Engineer Project
 
@@ -348,9 +348,9 @@ for k in k_range:
 
 | Segment Type | Penetration Rate | Description |
 |---|---|---|
-| 🎯 **Core Target** | ≥ 1.4× baseline | Older, financially stable, mainstream-oriented, suburban/semi-rural |
-| 🟡 **Moderate** | 0.85–1.4× baseline | Mixed profile; moderate propensity |
-| ❌ **Low Priority** | < 0.85× baseline | Younger, urban, avantgarde-oriented, lower income |
+|  🟢 **Core Target** | ≥ 1.4× baseline | Older, financially stable, mainstream-oriented, suburban/semi-rural |
+|  🟡 **Moderate** | 0.85–1.4× baseline | Mixed profile; moderate propensity |
+|  ❌ **Low Priority** | < 0.85× baseline | Younger, urban, avantgarde-oriented, lower income |
 
 ### Core Customer Profile (Overrepresented Clusters)
 
@@ -526,25 +526,30 @@ HAC            ~0.60    ~0.54   1.000
 
 ## Repository Structure
 
+```text
+customer-affinity-segmentation/
+├── Identify_Customer_Segments.ipynb          # Main analysis notebook
+├── Identify_Customer_Segments.html           # Rendered HTML export
+├── Customer_affinity_segmentation_report.pdf # Project report (PDF)
+├── README.md                                 # Documentation
+├── LICENSE                                   # MIT License
+├── .gitignore                                # Git ignore rules
+└── data/                                     # Excluded from version control (gitignored)
+    ├── Udacity_AZDIAS_Subset.csv             # General population dataset
+    ├── Udacity_CUSTOMERS_Subset.csv          # Customer dataset
+    ├── AZDIAS_Feature_Summary.csv            # Feature metadata
+    └── Data_Dictionary.md                    # Feature encoding guide
 ```
-identify-customer-segments/
-│
-├── Identify_Customer_Segments.ipynb   ← Main analysis notebook (fully completed)
-├── README.md                          ← This file
-├── Customer_Segments_ML_Report.docx   ← Full project report
-│
-├── data/                                 ← Proprietary — NOT included in repo
-│   ├── Udacity_AZDIAS_Subset.csv         ← General population (891,211 × 85)
-│   ├── Udacity_CUSTOMERS_Subset.csv      ← Customers (191,652 × 85)
-│   ├── AZDIAS_Feature_Summary.csv        ← Feature metadata
-│   └── Data_Dictionary.md               ← Feature encoding guide
-│
-└── requirements.txt                      ← Python dependencies
-```
+
+The `data/` directory is gitignored and must be obtained directly from Udacity's project portal.
+
 
 > The `data/` directory is excluded from version control (`data/` in `.gitignore`). You must obtain the datasets from Udacity's project portal under the Arvato data agreement.
 
 ---
+
+A full write-up of the methodology, results framing, business value, and limitations is available in [Customer Affinity Segmentation Report](./ Customer_affinity_segmentation_report.pdf).
+
 
 ## Getting Started
 
@@ -558,8 +563,8 @@ identify-customer-segments/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<your-username>/customer-affinity-segmentation.git
-cd identify-customer-segments
+git clone https://github.com/eaamankwah/customer-affinity-segmentation.git
+cd customer-affinity-segmentation
 
 # 2. Create and activate a virtual environment
 python -m venv venv
